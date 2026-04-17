@@ -363,18 +363,169 @@ Membuat lebih dari 4 presentasi dan proposal desain setiap bulan untuk klien dan
         <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Saya memiliki komitmen tinggi dalam menjalankan tanggung jawab serta mampu bekerja secara konsisten untuk mencapai hasil yang optimal. Terbiasa menghadapi tantangan dengan sikap disiplin dan bertanggung jawab..</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-         
-            </div><!-- End Portfolio Item -->
+     <!-- Modal Tugas - Menampilkan link tugas langsung dari tampilan -->
+  <div class="modal fade" id="taskModal" tabindex="-1" aria-labelledby="taskModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header task-modal-header">
+          <h5 class="modal-title" id="taskModalLabel">
+            <i class="bi bi-journal-check"></i> Daftar Tugas & Link
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="max-height: 500px; overflow-y: auto;">
+          <div class="alert alert-info" role="alert">
+            <i class="bi bi-info-circle"></i> Klik pada kartu tugas untuk mengunjungi link langsung!
+          </div>
+          
+          <div class="row g-4">
+            <!-- Tugas 1 -->
+            <div class="col-md-6">
+              <div class="card task-card h-100" onclick="window.open('https://www.w3schools.com/html/', '_blank')">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title mb-0">
+                      <i class="bi bi-code-square text-primary"></i> Tugas HTML Dasar
+                    </h5>
+                    <span class="badge-task">Selesai</span>
+                  </div>
+                  <p class="card-text text-muted small">Membuat struktur halaman web sederhana dengan HTML5</p>
+                  <div class="link-preview mt-2">
+                    <i class="bi bi-link-45deg"></i> 
+                    <small class="text-break">w3schools.com/html/</small>
+                  </div>
+                  <button class="btn btn-task btn-sm mt-3 w-100">
+                    <i class="bi bi-box-arrow-up-right"></i> Buka Link Tugas
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Tugas 2 -->
+            <div class="col-md-6">
+              <div class="card task-card h-100" onclick="window.open('https://getbootstrap.com/docs/5.3/getting-started/introduction/', '_blank')">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title mb-0">
+                      <i class="bi bi-bootstrap-fill text-purple"></i> CSS & Bootstrap
+                    </h5>
+                    <span class="badge-task">Progress</span>
+                  </div>
+                  <p class="card-text text-muted small">Implementasi framework Bootstrap untuk responsive design</p>
+                  <div class="link-preview mt-2">
+                    <i class="bi bi-link-45deg"></i> 
+                    <small class="text-break">getbootstrap.com/docs/5.3/</small>
+                  </div>
+                  <button class="btn btn-task btn-sm mt-3 w-100">
+                    <i class="bi bi-box-arrow-up-right"></i> Buka Link Tugas
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Tugas 3 -->
+            <div class="col-md-6">
+              <div class="card task-card h-100" onclick="window.open('https://www.javascript.com/', '_blank')">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title mb-0">
+                      <i class="bi bi-filetype-js text-warning"></i> JavaScript Fundamental
+                    </h5>
+                    <span class="badge-task">Selesai</span>
+                  </div>
+                  <p class="card-text text-muted small">Mempelajari dasar-dasar JavaScript dan interaktivitas web</p>
+                  <div class="link-preview mt-2">
+                    <i class="bi bi-link-45deg"></i> 
+                    <small class="text-break">javascript.com</small>
+                  </div>
+                  <button class="btn btn-task btn-sm mt-3 w-100">
+                    <i class="bi bi-box-arrow-up-right"></i> Buka Link Tugas
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Tugas 4 -->
+            <div class="col-md-6">
+              <div class="card task-card h-100" onclick="window.open('https://github.com/', '_blank')">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title mb-0">
+                      <i class="bi bi-github"></i> Version Control (Git)
+                    </h5>
+                    <span class="badge-task">Progress</span>
+                  </div>
+                  <p class="card-text text-muted small">Belajar menggunakan Git dan GitHub untuk kolaborasi</p>
+                  <div class="link-preview mt-2">
+                    <i class="bi bi-link-45deg"></i> 
+                    <small class="text-break">github.com</small>
+                  </div>
+                  <button class="btn btn-task btn-sm mt-3 w-100">
+                    <i class="bi bi-box-arrow-up-right"></i> Buka Link Tugas
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Tugas 5 -->
+            <div class="col-md-6">
+              <div class="card task-card h-100" onclick="window.open('https://www.figma.com/', '_blank')">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title mb-0">
+                      <i class="bi bi-brush text-success"></i> UI/UX Design (Figma)
+                    </h5>
+                    <span class="badge-task">Baru</span>
+                  </div>
+                  <p class="card-text text-muted small">Mendesain prototipe website menggunakan Figma</p>
+                  <div class="link-preview mt-2">
+                    <i class="bi bi-link-45deg"></i> 
+                    <small class="text-break">figma.com</small>
+                  </div>
+                  <button class="btn btn-task btn-sm mt-3 w-100">
+                    <i class="bi bi-box-arrow-up-right"></i> Buka Link Tugas
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Tugas 6 -->
+            <div class="col-md-6">
+              <div class="card task-card h-100" onclick="window.open('https://www.php.net/', '_blank')">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title mb-0">
+                      <i class="bi bi-filetype-php text-info"></i> PHP & MySQL
+                    </h5>
+                    <span class="badge-task">Progress</span>
+                  </div>
+                  <p class="card-text text-muted small">Membangun aplikasi web dinamis dengan PHP dan database</p>
+                  <div class="link-preview mt-2">
+                    <i class="bi bi-link-45deg"></i> 
+                    <small class="text-break">php.net</small>
+                  </div>
+                  <button class="btn btn-task btn-sm mt-3 w-100">
+                    <i class="bi bi-box-arrow-up-right"></i> Buka Link Tugas
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-4 p-3 bg-light rounded">
+            <h6 class="mb-2"><i class="bi bi-star-fill text-warning"></i> Catatan Tugas:</h6>
+            <p class="small text-muted mb-0">Semua link di atas merupakan sumber belajar resmi. Klik pada kartu tugas atau tombol "Buka Link Tugas" untuk mengakses materi pembelajaran langsung.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-task" onclick="window.open('https://github.com/', '_blank')">
+            <i class="bi bi-github"></i> Lihat Semua Proyek
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
           </div><!-- End Portfolio Container -->
 
